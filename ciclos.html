@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclos</title>
+</head>
+<body>
+    <script>
+        var semana=["Lunes","Martes","Miércoles","Jueves","Viernes"];
+        var numeroDias = semana.length;
+        var index = 0;
+        /********** FOR ************
+       /* for (let i = 4; i >= 0; i--) {
+           //console.log(i) ; 
+           document.write("Elemento: "+i+"<br>");          
+        }        
+        var diasSemana=["Lunes","Martes","Miércoles","Jueves","Viernes"];
+        for (let index = 0; index <= diasSemana.length-1; index++) {
+            document.write("Día --> "+diasSemana[index]+"<br>");
+        }*/
+
+        /******** WHILE ***********
+        
+        while(index < numeroDias){
+            document.write("Día de la semana --> "+semana[index]+"<br>");
+            index++;
+        }*/
+
+        //******** DO WHILE ***********
+        do{
+            document.write("Día  --> "+semana[index]+"<br>");
+            index++;
+        }while(index < numeroDias);
+
+    </script>
+</body>
+</html>
