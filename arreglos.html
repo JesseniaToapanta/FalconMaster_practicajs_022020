@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //un arreglo puede tener diferentes tipos de datos
+        //en javavascript los arreglos no tienen que especificar su longitud 
+        var amigos = ["Ying","Joha","Miguel","Daisy","Daniel",true];
+        //document.write(amigos[2]);
+        //amigos[0] = "Arturo";
+       var longitud = amigos.length;
+       //document.write("Tienes "+longitud+" amigos"); 
+       /*amigos[amigos.length]="Erika";
+       amigos[amigos.length]="Danilo";*/
+       //push es un método que sirve para agregar elementos al array
+       amigos.push("Sebas","Danilo","Henry");
+       //pop elimina el último elelemto del array
+       amigos.pop();
+       var amigos2=["Luis","Fernando","Oscar"];
+       //concat permite concatenar 2 arrays
+       var amigos3 = amigos.concat(amigos2);
+       //join separa cada elemento del array con un caracer al imprimirlo
+       //document.write(amigos.join(" | "));
+       var amigos4 = amigos.join(" : ");
+       //document.write(amigos4);
+       //sort ordena alfabéticamente los elementos del array
+       //var ordenados = amigos2.sort();
+       //document.write(ordenados);
+       //reverse ordena de forma inversa al array
+       var ordenados = amigos2.reverse();
+       document.write(ordenados);
+    </script>
+</body>
+</html>

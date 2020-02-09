@@ -17,13 +17,43 @@
         //2. String - cadena de texto
         var nombre = "Jessenia";
         var apellido = "Toapanta"
+        //en las cadenas de texto no se puede poner comillas dentro de otras comillas
+        //para ellos hay dos soculciones
+        //1. reemplazar una de las comillas con comillas simples, ejemplo
+        var nombreEscuela = 'Unidad Educativa "México"';
+        //2. poner la palabra entre backslash, sintaxis \"cadenaTexto\"
+        var nombreEscuela2 = "Unidad Educativa \"México\"";
+
         document.write(nombre+" "+apellido);
+        document.write(nombreEscuela);
+        document.write(nombreEscuela2);
         //3. Array - arreglo
+        //conjunto de elemtos de cualquier tipo
+        var amigos = ["Carlos","Alejandro","Cesar"];
+        document.write(amigos[0]);
         //4. Object - objeto
+        var carro ={
+            color: "Black",
+            puertas: 4
+        }
+
         //5. Boolean - boleano
+        var boleano = true;
+
         //6. Undefined
-        //7. Null
+        //son las variables no definidas, es decir que no les asignado ningún valor
+        var jota;
+
+         //7. Null
+         //para establecer el valor de una variable en null
+         var numero2 = 10;
+         // ----
+         var numero2 = null;
+
         //8. NaN
+        //valor inválido por ejemplo si  se multiplica un texto por un número
+        var texto2 = "Holaa";
+        document.write(texto2*2); //sale NaN
 
     </script>
     
